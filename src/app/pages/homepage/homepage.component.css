@@ -1,0 +1,16 @@
+
+
+
+/**********************************
+    Section About
+*/
+
+
+.about_box{
+  margin:1em;
+  padding:1em;
+  height: 400px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1;
+}

@@ -1,0 +1,127 @@
+
+
+
+
+<!-- Header -->
+<app-header-template>
+  <!-- Main Container -->
+  <section headerContent>
+
+
+    <div class="container">
+
+      <div class="mt-5 form row" >
+        <div class="mt-2 col-md-6 mx-auto">
+          <app-searchbar></app-searchbar>
+        </div>
+      </div>
+
+
+      <div class="mt-5 mb-4" style="font-size: 0.8em !important;">
+        <div class="row">
+          <div class="col-md-10 mx-auto">
+            <h3><strong><span class="text-light-50 font-weight-bold">Personal Profile</span>  &nbsp; <a  style="font-size:17px;font-weight: 800; color: #00ffc4;" routerLink="game">Edit</a></strong></h3>
+            <div class="box_border text-center mt-3" style="font-size: 1.3em">
+              <div class="form" style="min-height:600px;padding:40px;text-align: left;">
+
+                <div class="row">
+
+                  <!-- Profile Information -->
+                  <div class="col-md-9">
+                    <h4>Basic Information</h4>
+                    <div class="mt-4 row">
+                      <div class="col-md-4 font-weight-bold">Username:</div>
+                      <div class="col-md-8 text-light-50">AuntumnSlim</div>
+                    </div>
+                    <div class="mt-4 row">
+                      <div class="col-md-4 font-weight-bold">Full Name:</div>
+                      <div class="col-md-8 text-light-50">Folahan Adebayo</div>
+                    </div>
+                    <div class="mt-4 row">
+                      <div class="col-md-4 font-weight-bold">Date of Birth:</div>
+                      <div class="col-md-8 text-light-50">27/04/1896</div>
+                    </div>
+                    <div class="mt-4 row">
+                      <div class="col-md-4 font-weight-bold">Sex</div>
+                      <div class="col-md-8 text-light-50">Female</div>
+                    </div>
+                    <div class="mt-4 row">
+                      <div class="col-md-4 font-weight-bold">Member Since:</div>
+                      <div class="col-md-8 text-light-50">4/10/2019</div>
+                    </div>
+
+                    <h4 class="mt-5">Email Address</h4>
+                    <div class="mt-4 row">
+                      <div class="col-md-4 font-weight-bold">Email</div>
+                      <div class="col-md-8 text-light-50">Myname@yourmail.com</div>
+                    </div>
+
+                    <h4 class="mt-5">Game Specific Identities</h4>
+                    <div class="mt-4 row">
+                      <div class="col-md-4 font-weight-bold">Usernames:</div>
+                      <div class="col-md-8 text-light-50">No specific identity found</div>
+                    </div>
+
+                    <h4 class="mt-5">Playcode Community</h4>
+
+
+                    <h4 class="mt-5">Download History</h4>
+                    <div class="mt-4 row">
+                      <div class="col-md-4 font-weight-bold">Games Downloaded:</div>
+                      <div class="col-md-8 text-light-50">2088</div>
+                    </div>
+                    <div class="mt-4 row">
+                      <div class="col-md-4 font-weight-bold">Games Played:</div>
+                      <div class="col-md-8 text-light-50">201</div>
+                    </div>
+                    <h4 class="clearfix mt-5">&nbsp;</h4>
+                  </div>
+
+                  <!-- Profile Picture -->
+                  <div class="col-md-3">
+                    <img style="" src="../../../../assets/images/icon-big/avatar.png" alt="">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h4 class="mt-5 mb-5 text-center text-light">Recommendations</h4>
+
+    <div class="container mt-5 mb-4" style="font-size: 0.8em !important;">
+      <!-- First row-->
+      <div class="mt-3 row">
+        <div class="mb-3 col-md-3" *ngFor="let i of [1,2,3,4, 1,2,3,4 ]">
+          <div class="text-center" style="background: linear-gradient(rgba(111,111,111,0.5), rgba(107,107,107,0.5)),  url('../../../../assets/images/demo/game.png') no-repeat; background-size: cover; background-position: center center; border-radius: 20px; height:300px;">
+            <div style="height:33%"></div>
+            <a routerLink="/game/profile/">
+              <img src="../../../../assets/images/icon/triangle.png"  alt="game icon"/>
+              <h4 class="text-light mt-2" style="font-family: pantonblack_caps,sans-serif;text-transform: uppercase">Super Mario</h4>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+</app-header-template>
+
+
+
+
+
+
+
+
+
+
+
+<div class="clearfix"></div>
+<div style="margin:50px">&nbsp;</div>
+
+

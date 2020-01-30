@@ -1,0 +1,80 @@
+
+
+
+<!-- Header -->
+<app-header-template>
+
+  <section class="container" style="margin-top:120px;" headerContent>
+    <div class="row">
+      <div class="col-md-10 mx-auto">
+        <div class="box_border text-center" style="background: url('../../../../assets/images/bg/game500px.png')">
+
+          <div class="form" style="height:650px;padding:0 10px;">
+            <app-auth-menu></app-auth-menu>
+
+            <div class="row mt-5">
+              <div class="col-md-8 mx-auto text-left">
+                <h4 class="mb-3 pl-2"> Signup <br> <small style="font-size: 14px; color:#e3e3e3;">Create your free account now</small></h4>
+              </div>
+
+              <div class="mt-2 col-md-8 mx-auto">
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Username"  />
+                </div>
+              </div>
+
+              <div class="mt-2 col-md-8 mx-auto">
+                <div class="form-group">
+                  <input class="form-control" type="email" placeholder="Email"  />
+                </div>
+              </div>
+
+              <div class="mt-2 col-md-8 mx-auto">
+                <div class="form-group">
+                  <input class="form-control" type="number" placeholder="Mobile  Number" style="background: transparent url('../../../../assets/images/icon/ng-flag.png');  background-position: 100% 10px;  background-repeat: no-repeat;" />
+                </div>
+              </div>
+
+              <div class="mt-2 col-md-8 mx-auto">
+                <div class="form-group">
+                  <input class="form-control" type="password" placeholder="Password"  />
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+
+            <!-- Action Button -->
+            <div class="mt-2 row">
+              <div class="col-md-8 mx-auto">
+                <button type="button" class="btn btn-block btn-primary-dark">Sign Up</button>
+                <div class="mt-3 row">
+                  <div class="col-md-6">
+                    <button type="button" class="btn btn-block btn-primary-dark-50 mb-2">
+                      <img style="height:20px;border-radius:3px" src="../../../../assets/images/social/login/facebook.png" alt="">&nbsp;&nbsp; Continue with Facebook
+                    </button>
+                  </div>
+                  <div class="col-md-6">
+                    <button type="button" class="btn btn-block btn-primary mb-2">
+                      <img style="height:20px;border-radius:3px" src="../../../../assets/images/social/login/google.png" alt="">&nbsp;&nbsp;  Continue with Google
+                    </button>
+                  </div>
+                </div>
+                <p class="mt-3">
+                  Already have a Playcode account?
+                  <br><a [routerLink]="['/login']" class="font-weight-bold text-light">Log in instead</a>
+                </p>
+                <p class="mt-5">
+                  By continuing you accept our standard terms, <a class="font-weight-bold text-light" href="#">conditions</a> and <a class="font-weight-bold text-light" href="#">privacy policy.</a>
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</app-header-template>
+

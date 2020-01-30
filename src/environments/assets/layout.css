@@ -1,0 +1,183 @@
+
+
+/**********************************
+    Font
+*/
+
+@font-face {
+  font-family: SignikaNegative;
+  src: url('fonts.text/Signika_Negative/SignikaNegative-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: SignikaNegative;
+  src: url('fonts.text/Signika_Negative/SignikaNegative-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: SignikaNegative;
+  src: url('fonts.text/Signika_Negative/SignikaNegative-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: SignikaNegative;
+  src: url('fonts.text/Signika_Negative/SignikaNegative-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'pantonblack_caps';
+  src: url('fonts.text/panton_black/panton-blackcaps-webfont.woff2') format('woff2'),
+  url('fonts.text/panton_black/panton-blackcaps-webfont.woff') format('woff'),
+  url('fonts.text/panton_black/Panton-BlackCaps.otf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font-family: SignikaNegative, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+body{
+  background: #0b0a0f;
+}
+
+
+
+
+
+/******************************
+   * Header Layout
+   *******/
+
+.header_main{
+  width: calc(100% - 50px);
+  float:left;
+  height:100vh;
+  margin-top:20px;
+}
+
+.header_main_sidebar{
+  width: 50px;
+  float:right;
+  margin-top:20px;
+  height:100vh !important;
+  border-left-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, rgba(108, 99, 255, 0.99) 60%, rgba(0, 0, 0, 0) 90%) 1 100%;
+}
+
+.header_main_sidebar{
+  width: 50px;
+  float:right;
+  border-left:solid 2px #6c63ff;
+  height:200px;
+  margin-top:20px;
+}
+
+.header_inner_blank{
+  width: calc(100% - 50px);
+  float:left;
+  height:40px;
+  background: linear-gradient(#0b0a0f, #0b0a0f), linear-gradient(to right, rgba(112, 112, 112, 0.1), #6c63ff);
+  background-origin: padding-box, border-box;
+  background-repeat: no-repeat; /* this is important */
+  border-bottom: 2px solid transparent;
+  border-right: 0;
+  border-left: 0;
+}
+
+.header_inner_blank_user_menu{
+  width: 50px;
+  float:right;
+  height:40px;
+  text-align: center;
+  padding:10px 10px;
+  border:solid 2px #6c63ff;
+  border-bottom: 0;
+  border-right: 0;
+  border-top-left-radius: 5px;
+}
+.header_inner_blank_user_menu a:hover{ opacity: 0.2; }
+
+
+
+
+/******************************
+ * Content Layout
+ *******/
+
+.main_content{
+  padding:10em;
+  background: url('../../assets/images/playcode.png') no-repeat center;
+  background-position: 60px 10px;
+  background-size: 80%;
+}
+@media screen and (max-width: 1000px) {
+  .main_content{
+    background-position: 20px 100px;
+    padding: 7em 2em 0 3em;
+  }
+  .header-text > .txt-left > h2 {
+    font-size: 1.2em;
+  }
+}
+
+
+.header-text .txt-left{
+  line-height: 1.0;
+  color: #fff;
+  font-size: 2.4em;
+  font-family: 'SignikaNegative', sans-serif;
+}
+
+@media screen and (min-width: 1000px) {
+  .header-text > .txt-left > h2 {
+    font-size: 1.9em;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+  }
+}
+
+
+
+/******************************
+ * Menu Layout
+ *******/
+
+.sidebar-menu-icon{
+  padding-top:80px;
+}
+
+.sidebar-menu-icon a{
+  display: block;
+  text-align: center;
+  padding-bottom:10px !important;
+}
+
+.link_hover1 a:hover{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(43, 42, 100) 35%, rgb(38, 37, 85) 100%);
+}

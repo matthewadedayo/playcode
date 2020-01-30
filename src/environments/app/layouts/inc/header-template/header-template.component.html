@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="col-md-12">
+
+    <!-- main -->
+    <div class="header_main">
+      <div>
+        <!-- blank -->
+        <div class="header_inner_blank">
+
+        </div>
+
+        <!-- user menu -->
+        <div class="header_inner_blank_user_menu">
+          <a href="#"  [routerLink]="['/login']"><img src="../../../../assets/images/icon/user.png" alt="user icon" /></a>
+        </div>
+      </div>
+
+      <!-- Main Container -->
+      <div class="main_content_no_image" style="">
+
+        <!--  Header Section -->
+        <ng-content select="[headerContent]"></ng-content>
+
+      </div>
+    </div>
+
+    <!-- sidebar -->
+    <div class="header_main_sidebar">
+      <div class="sidebar-menu-icon link_hover1">
+        <a href="#"><img src="../../../../assets/images/icon/download.png" alt="download icon"></a>
+        <a href="#"><img src="../../../../assets/images/icon/customize.png" alt="customize icon"></a>
+        <hr style="width:13px; background:#02ffa2; margin: 5px auto 15px;" />
+        <a href="#"><img src="../../../../assets/images/icon/gear.png" alt="gear icon"></a>
+        <a href="#"><img src="../../../../assets/images/icon/card.png" alt="card icon"></a>
+      </div>
+    </div>
+  </div>
+</div>

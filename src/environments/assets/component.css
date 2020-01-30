@@ -1,0 +1,107 @@
+
+
+/*********** ************* **********
+    Animation
+*/
+
+@keyframes shadow-pulse {
+  0% {box-shadow: 0 0 0 0 rgba(108, 99, 255, 0.62);}
+  100% {box-shadow: 0 0 0 35px rgba(239, 253, 255, 0.08);}
+}
+.animation-glow{
+  animation: shadow-pulse 3s infinite;
+}
+
+
+
+/**********************************
+    Border
+*/
+
+
+.box_border {
+  font-family: SignikaNegative, sans-serif;
+  color:white;
+  border-radius: 10px;
+  border: solid 1px #6c63ff;
+  background-color: #160f30;
+}
+a.box_border_link_active, a.box_border_link:hover{ color: #ffffff; }
+a.box_border_link{color: #959892;}
+
+
+
+/*********** ************* **********
+    Font and Text Style
+*/
+
+
+.text-light-50 {
+  opacity: 0.6;
+  font-family: SignikaNegative, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #f7f7f7;
+}
+
+
+
+
+/**********************************
+    Form
+*/
+
+
+.form{
+  margin-top:20px;
+  font-weight: 400;
+  color:white;
+}
+
+.form input{
+  border: none;
+  color:white;
+  border-bottom:1px solid #6c63ff;
+  box-sizing: border-box;
+  border-radius:0;
+}
+
+.form input:focus{
+  color:white;
+  border: none !important;
+  border-bottom:1px solid #ffffff !important;
+}
+
+.form input::placeholder {
+  color: #e0e0e0;
+}
+
+
+/**********************************
+    Button
+*/
+
+.btn-black-custom{
+  background: #0b0a0f;
+  font-family: SignikaNegative, sans-serif;
+  line-height: 0.84;
+  letter-spacing: 2px;
+  color: #f7f7f7;
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.16);
+  padding:15px 30px;
+  border-radius: 30px;
+  border: solid 2px #6c63ff;
+}
+
+
+.btn-bold{
+  font-size: 28px;
+  font-weight: bold;
+}
+.btn{ border-radius: 10px; color:white; }
+.btn:hover{color:white; opacity: 0.8; }
+.btn-primary-dark{ background-color: #6159e5 !important; }
+.btn-primary-dark-50{ background-color: #4A67AD !important;; }
